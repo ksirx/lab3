@@ -32,7 +32,7 @@ public class ArrayTests {
 
   @Test
   public void testAverageWithoutLowest1() {
-    double[] inputDub = { 80.0, 90.00, 100.00, 70.00 };
-    assertArrayEquals(double 5.0, ArrayExamples.averageWithoutLowest(inputDub));
+    double[] inputDub = { 80.00, 90.00, 100.00, 70.00 };
+    assertEquals(90.00, ArrayExamples.averageWithoutLowest(inputDub), 0.01);
   }
 }
