@@ -35,4 +35,10 @@ public class ArrayTests {
     double[] inputDub = { 80.00, 90.00, 100.00, 70.00 };
     assertEquals(90.00, ArrayExamples.averageWithoutLowest(inputDub), 0.01);
   }
+
+  @Test
+  public void testAverageWithoutLowest2() {
+    double[] inputDub = { 80.00, 80.00, 80.00, 80.00  };
+    assertEquals(80.00, ArrayExamples.averageWithoutLowest(inputDub), 0.01);
+  }
 }
